@@ -10,8 +10,8 @@ The model is then compiled with the Adam optimizer and sparse categorical cross-
 
 The training process begins by splitting the preprocessed dataset into training and testing sets, with 80% of the data used for training and 20% for testing. The model is trained for 10 epochs, and the training progress is monitored using the validation data.
 
-After the model is trained, the code performs predictions on sample images. Specifically, it loads a test image, applies color segmentation techniques using HSV color space to extract relevant features, resizes the segmented result, and then feeds it into the trained model. The predicted class for the image is printed, indicating whether the model categorizes it as "Benign," "Early," "Pre," or "Pro."
+Once the model is trained, the code performs predictions on sample images. Specifically, it loads a test image, applies color segmentation techniques using the HSV color space to extract relevant features, resizes the segmented result, and then feeds it into the trained model. The predicted class for the image is printed, indicating whether the model categorizes it as "Benign," "Early," "Pre," or "Pro."
 
-Finally, the code measures and displays the elapsed time for making predictions on the test images.
+Additionally, as part of this project, there is a plan to develop an application that will implement the model. This application will allow doctors to upload patient images and receive predictions from the model, indicating whether the patient is sick or not. This has the potential to significantly reduce the workload of medical professionals and expedite the diagnostic process.
 
-In summary, this code demonstrates the process of training a CNN-based image classification model on a medical image dataset with four different classes. It uses color segmentation for feature extraction and provides insights into the model's prediction performance.
+Finally, there is a plan to create a Python Flask API to enable the convenient and accessible uploading of images to the application and to display the results to the medical professionals
